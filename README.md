@@ -64,31 +64,7 @@ Bagisto is using power of both of these frameworks and making best out of it out
 
 ### 3. Installation & Configuration <a name="#configuration"></a>:
 
-**1. Try our new GUI installer to install Bagisto:**
-
-##### a. Download zip from the link below:
-
-[Download](https://github.com/bagisto/bagisto/archive/v0.1.4.zip)
-
-##### b. Extract the contents of zip and execute the project in browser:
-
-~~~
-http(s)://localhost/bagisto/public
-~~~
-
-or
-
-~~~
-http(s)://example.com/public
-~~~
-
-**2. Try our old fashioned way to install Bagisto:**
-
-##### Execute these commands below as in their order
-
-~~~
-1. composer create-project bagisto/bagisto
-~~~
+**1. Clone this project
 
 **Now configure your database:**
 
@@ -106,25 +82,35 @@ Find file **.env** inside **bagisto** directory and set the environment variable
 
 Although, mailer environment variables are also required to be set up as **Bagisto** requires emails to send to customers and admins for various functionalities that are built in.
 
+
+
 ~~~
-2. php artisan migrate
+2. Compy .envexample to .env
 ~~~
 
 ~~~
-3. php artisan db:seed
+3. php artisan key:generate
 ~~~
 
 ~~~
-4. php artisan vendor:publish
+4. php artisan migrate
+~~~
+
+~~~
+5. php artisan db:seed
+~~~
+
+~~~
+6. php artisan vendor:publish
 -> Press 0 and then press enter to publish all assets and configurations.
 ~~~
 
 ~~~
-5. php artisan storage:link
+7. php artisan storage:link
 ~~~
 
 ~~~
-6. composer dump-autoload
+8. composer dump-autoload
 ~~~
 
 
@@ -159,36 +145,4 @@ password:admin123
 > *http(s)://example.com/customer/register*
 
 
-### 5. License <a name="#license"></a>:
-Bagisto is a truly opensource E-Commerce framework which will always be free under the [MIT License](https://github.com/bagisto/bagisto/blob/master/LICENSE).
 
-
-### 6. Miscellaneous <a name="#miscellaneous"></a>:
-
-#### Contributors
-
-This project exists thanks to all the people who contribute.
-<a href="https://github.com/bagisto/bagisto/graphs/contributors"><img src="https://opencollective.com/bagisto/contributors.svg?width=890&button=false" /></a>
-
-
-#### Backers
-
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/bagisto#backer)]
-
-<a href="https://opencollective.com/bagisto#backers" target="_blank"><img src="https://opencollective.com/bagisto/backers.svg?width=890"></a>
-
-
-#### Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/bagisto#sponsor)]
-
-<a href="https://opencollective.com/bagisto/sponsor/0/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/1/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/2/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/3/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/4/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/5/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/6/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/7/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/8/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/bagisto/sponsor/9/website" target="_blank"><img src="https://opencollective.com/bagisto/sponsor/9/avatar.svg"></a>
