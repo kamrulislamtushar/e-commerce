@@ -271,8 +271,21 @@ Route::group(['middleware' => ['web', 'theme', 'locale', 'currency']], function 
                 Route::get('reviews/all-delete', 'Webkul\Shop\Http\Controllers\ReviewController@deleteAll')->defaults('_config', [
                     'redirect' => 'customer.reviews.index'
                 ])->name('customer.review.deleteall');
+
             });
         });
     });
     //customer routes end here
 });
+
+Route::get('/about-us', 'Webkul\Shop\Http\Controllers\PagesController@about_us')
+    ->defaults('_config', ['view' => 'shop::pages.aboutus'])->name('footer.about_us');
+
+Route::get('/terms-condition', 'Webkul\Shop\Http\Controllers\PagesController@terms')
+    ->defaults('_config', ['view' => 'shop::pages.terms'])->name('footer.terms');
+
+Route::get('/contact-us', 'Webkul\Shop\Http\Controllers\PagesController@contact')
+    ->defaults('_config', ['view' => 'shop::pages.contactus'])->name('footer.contact');
+
+Route::get('/terms-use', 'Webkul\Shop\Http\Controllers\PagesController@terms_use')
+    ->defaults('_config', ['view' => 'shop::pages.termsUse'])->name('footer.use');
