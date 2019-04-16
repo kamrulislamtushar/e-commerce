@@ -13,13 +13,13 @@
                 </li>
             </ul>
 
-            <ul class="search-container">
+            <ul class="search-container ml-93 " >
                 <li class="search-group">
                     <form role="search" action="{{ route('shop.search.index') }}" method="GET" style="display: inherit;">
                         <input type="search" name="term" class="search-field" placeholder="{{ __('shop::app.header.search-text') }}" required>
 
                         <div class="search-icon-wrapper">
-                            <button class="" class="background: none;">
+                            <button  class="background: none;">
                                 <i class="icon icon-search"></i>
                             </button>
                         </div>
@@ -62,11 +62,9 @@
 
                 <li>
                     <span class="dropdown-toggle">
-                        <i class="icon account-icon"></i>
+                        <i class="fas fa-user-circle"></i>
 
                         <span class="name">{{ __('shop::app.header.account') }}</span>
-
-                        <i class="icon arrow-down-icon"></i>
                     </span>
 
                     @guest('customer')

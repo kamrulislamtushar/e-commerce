@@ -9,10 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="content-language" content="{{ app()->getLocale() }}">
-    <link rel="stylesheet" href="{{ bagisto_asset('css/shop.css') }}">
+
     <link rel="stylesheet" href="{{ asset('vendor/webkul/ui/assets/css/ui.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="{{asset('css/style.css') }}">
     @if ($favicon = core()->getCurrentChannel()->favicon_url)
         <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
     @else
@@ -26,7 +27,8 @@
     @show
 
     @stack('css')
-
+    <link rel="stylesheet" href="{{ bagisto_asset('css/shop.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     {!! view_render_event('bagisto.shop.layout.head') !!}
 
 </head>
@@ -68,7 +70,7 @@
 
         <div class="footer-bottom">
             <p>
-                {{ __('shop::app.webkul.copy-right', ['year' => date('Y')]) }}
+                © Copyright 2019 <a href="https://bdkroy.com.bd" style="color: #198590">BDKROY.COM.BD</a>, All rights reserved
             </p>
         </div>
 
