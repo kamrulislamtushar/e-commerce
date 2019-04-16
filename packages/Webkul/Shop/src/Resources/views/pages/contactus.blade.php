@@ -1,5 +1,7 @@
 @extends('shop::layouts.master')
-
+@section('page_title')
+    Contact Us
+@endsection
 @section('content-wrapper')
 
     <!--Section: Contact v.2-->
