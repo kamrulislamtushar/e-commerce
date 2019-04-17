@@ -287,5 +287,5 @@ Route::get('/terms-condition', 'Webkul\Shop\Http\Controllers\PagesController@ter
 Route::get('/contact-us', 'Webkul\Shop\Http\Controllers\PagesController@contact')
     ->defaults('_config', ['view' => 'shop::pages.contactus'])->name('footer.contact');
 
-Route::get('/terms-use', 'Webkul\Shop\Http\Controllers\PagesController@terms_use')
+Route::get('/faq', 'Webkul\Shop\Http\Controllers\PagesController@terms_use')
     ->defaults('_config', ['view' => 'shop::pages.termsUse'])->name('footer.use');
