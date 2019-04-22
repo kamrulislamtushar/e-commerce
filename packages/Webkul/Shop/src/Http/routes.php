@@ -289,3 +289,6 @@ Route::get('/contact-us', 'Webkul\Shop\Http\Controllers\PagesController@contact'
 
 Route::get('/faq', 'Webkul\Shop\Http\Controllers\PagesController@terms_use')
     ->defaults('_config', ['view' => 'shop::pages.termsUse'])->name('footer.use');
+
+Route::get('/privacy-policy', 'Webkul\Shop\Http\Controllers\PagesController@privacy')
+    ->defaults('_config', ['view' => 'shop::pages.privacy'])->name('footer.privacy');
