@@ -40,4 +40,9 @@ class PagesController extends Controller
     {
         return view($this->_config['view']);
     }
+
+    public function privacy()
+    {
+        return view($this->_config['view']);
+    }
 }

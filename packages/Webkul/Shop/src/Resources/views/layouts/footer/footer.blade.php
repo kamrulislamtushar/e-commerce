@@ -21,9 +21,10 @@
                 <div class="list-container">
                     <span class="list-heading">Quick Links</span>
                     <ul class="list-group">
-                        <li><a href="{{ route('footer.about_us') }}">About Us</a></li>
+                        {{--<li><a href="{{ route('footer.about_us') }}">About Us</a></li>--}}
                         <li><a href="{{ route('footer.terms') }}">Terms and conditions</a></li>
-                        <li><a href="{{ route('footer.use') }}">Terms of Use</a></li>
+                        <li><a href="{{ route('footer.use') }}">Frequently Asked Questions (FAQ)</a></li>
+                        <li><a href="{{ route('footer.privacy') }}">Privacy Policy</a></li>
                         <li><a href="{{ route('footer.contact') }}">Contact Us</a></li>
                     </ul>
                 </div>
