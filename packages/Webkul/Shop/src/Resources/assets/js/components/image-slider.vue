@@ -1,6 +1,6 @@
 <template>
 <transition name="slide">
-    <div class="slider-content" v-if="images.length>0">
+    <div class="slider-block" v-if="images.length>0">
 
         <ul class="slider-images">
             <li v-for="(image, index) in images" :key="index" v-bind:class="{'show': index==currentIndex}">
@@ -25,6 +25,7 @@ export default {
             type: Array,
             required: true,
             default: () => [],
+            loop:true
         },
 
         public_path: {
