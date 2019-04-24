@@ -2,7 +2,8 @@
     <div class="navbar-top-left">
         <div class="brand-logo">
             <a href="{{ route('admin.dashboard.index') }}">
-                <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="Bagisto"/>
+                <img src="{{ asset('images/logo.png') }}" class="logo" style="max-width: 175px;
+    max-height: 49px!important;" alt="BDKroy"/>
             </a>
         </div>
     </div>
