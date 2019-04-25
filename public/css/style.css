@@ -107,4 +107,8 @@ section.slider-block div.slider-content div.slider-control {
 }
 .buynow {
     font-size: 14px;!important;
+    margin-left: 20px;
+}
+.mt-top3-3 {
+    margin-top: 3.2rem;
 }
