@@ -35,10 +35,25 @@
                         @include ('shop::products.price', ['product' => $product])
 
                         @include ('shop::products.view.stock', ['product' => $product])
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="quantity control-group" :class="[errors.has('quantity') ? 'has-error' : '']">
 
-                        {!! view_render_event('bagisto.shop.products.view.short_description.before', ['product' => $product]) !!}
+                                    <label class="required">{{ __('shop::app.products.quantity') }}</label>
 
-                        <div class="description">
+                                    <input name="quantity" class="control" value="1" v-validate="'required|numeric|min_value:1'" style="width: 60px;" data-vv-as="&quot;{{ __('shop::app.products.quantity') }}&quot;">
+
+                                    <span class="control-error" v-if="errors.has('quantity')">@{{ errors.first('quantity') }}</span>
+                                </div>
+                            </div>
+                            <div class="col-10 mt-top3-3">
+                                {!! view_render_event('bagisto.shop.products.view.short_description.before', ['product' => $product]) !!}
+                                @include ('shop::products.view.product-add')
+                            </div>
+
+                        </div>
+
+                        <div class="description pt-5">
                             {!! $product->short_description !!}
                         </div>
 
@@ -47,14 +62,7 @@
 
                         {!! view_render_event('bagisto.shop.products.view.quantity.before', ['product' => $product]) !!}
 
-                        <div class="quantity control-group" :class="[errors.has('quantity') ? 'has-error' : '']">
 
-                            <label class="required">{{ __('shop::app.products.quantity') }}</label>
-
-                            <input name="quantity" class="control" value="1" v-validate="'required|numeric|min_value:1'" style="width: 60px;" data-vv-as="&quot;{{ __('shop::app.products.quantity') }}&quot;">
-
-                            <span class="control-error" v-if="errors.has('quantity')">@{{ errors.first('quantity') }}</span>
-                        </div>
 
                         {!! view_render_event('bagisto.shop.products.view.quantity.after', ['product' => $product]) !!}
 
