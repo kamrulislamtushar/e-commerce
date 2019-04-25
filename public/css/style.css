@@ -1,0 +1,110 @@
+.ml-93 {
+    margin-left: 30%!important
+}
+
+
+.header .header-top div.left-content ul.search-container li.search-group .search-field {
+
+    height: 39px!important;
+    width: 410px!important;
+    border: 1px solid #c7c7c7!important;
+    border-radius: 6px!important;
+    border-right: none!important;
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    padding-left: 32px!important;
+    font-family: Montserrat,sans-serif!important;
+
+}
+.header .header-top div.left-content ul.search-container li.search-group .search-icon-wrapper {
+    -webkit-box-sizing: border-box!important;
+    box-sizing: content-box!important;
+    height: 37px!important;
+    width: 38px!important;
+    border: 1px solid #c7c7c7!important;
+    border-top-right-radius: 6px!important;
+    border-bottom-right-radius: 6px!important;
+}
+
+.name {
+    font-weight: 100;
+}
+
+.header .header-top div.right-content .right-content-menu>li .arrow-down-icon {
+    display: none!important;
+}
+.header .header-bottom {
+
+    border-top: 0px solid #c7c7c7!important;
+
+}
+
+.footer {
+    background: #272727!important;
+}
+
+.footer .footer-content .footer-list-container .list-container .list-group a {
+    color: #f1ecec!important;
+    font-size: 14px!important;
+    font-weight: 100!important;
+}
+
+.footer .footer-content .footer-list-container .list-container .form-container .control-group .btn-primary {
+    background-color: #198590!important;
+    margin-top: 8px!important;
+    border-radius: 0!important;
+    text-align: center;
+}
+.footer-bottom {
+    background: #1d1818!important;
+    margin-top: 0px!important;
+    height: 75px!important;
+    color: #fffafa!important;
+}
+
+section.slider-block div.slider-content div.slider-control {
+    display: none!important;
+    cursor: progress;
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    bottom: 2%;
+    right: 2%;
+}
+
+.header .header-bottom .nav a {
+    font-weight: 100!important;
+}
+.header .header-bottom .nav li>.icon {
+
+
+}
+
+.category-description p {
+    text-transform: uppercase!important;
+}
+
+.header .header-top div.left-content ul.logo-container li img {
+    max-width: 175px;
+    max-height: 63px!important;
+}
+.brand-logo .logo {
+    max-width: 175px;
+    max-height: 63px!important;
+}
+
+.send-button {
+    background-color: #198590!important;
+    margin-top: 8px!important;
+    border-radius: 0!important;
+    text-align: center;
+    color: #ffffff!important;
+}
+.addtocart {
+   font-size: 14px!important;
+}
+.buynow {
+    font-size: 14px;!important;
+}

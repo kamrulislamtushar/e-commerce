@@ -18,7 +18,6 @@ class CreateProductOrderedInventoriesTable extends Migration
             $table->integer('qty')->default(0);
             $table->integer('product_id')->unsigned();
             $table->integer('channel_id')->unsigned();
-
             $table->unique(['product_id', 'channel_id']);
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->foreign('channel_id')->references('id')->on('channels')->onDelete('cascade');
