@@ -1,8 +1,6 @@
 @inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
 
 {!! view_render_event('bagisto.shop.products.view.reviews.after', ['product' => $product]) !!}
-
-@if ($total = $reviewHelper->getTotalReviews($product))
     <div class="rating-reviews">
         <div class="overall">
             <div class="review-info">
@@ -35,7 +33,7 @@
 
         <div class="reviews">
 
-            @foreach ($reviewHelper->getReviews($product)->paginate(10) as $review)
+            @foreach ($reviewHelper->getReviews($product)->paginate(5) as $review)
                 <div class="review">
                     <div class="title">
                         {{ $review->title }}
@@ -71,7 +69,6 @@
 
         </div>
     </div>
-@else
     @if (core()->getConfigData('catalog.products.review.guest_review') || auth()->guard('customer')->check())
         <div class="rating-reviews">
             <div class="rating-header">

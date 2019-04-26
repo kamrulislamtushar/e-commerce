@@ -1,3 +1,4 @@
+@inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
 @extends('shop::layouts.master')
 
 @section('page_title')
@@ -93,7 +94,7 @@
                         {!! view_render_event('bagisto.shop.products.view.description.before', ['product' => $product]) !!}
 
                         @include ('shop::products.view.attributes')
-
+                        @if ($total = $reviewHelper->getTotalReviews($product))
                         <accordian :title="'{{ __('shop::app.products.description') }}'" :active="false">
                             <div slot="header">
                                Ratings &  Reviews
@@ -106,6 +107,7 @@
                                 </div>
                             </div>
                         </accordian>
+                            @endif
                     </div>
                 </div>
             </product-view>
