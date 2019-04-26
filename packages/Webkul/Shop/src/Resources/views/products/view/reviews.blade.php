@@ -4,10 +4,6 @@
 
 @if ($total = $reviewHelper->getTotalReviews($product))
     <div class="rating-reviews">
-        <div class="rating-header">
-            {{ __('shop::app.products.reviews-title') }}
-        </div>
-
         <div class="overall">
             <div class="review-info">
 
