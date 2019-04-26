@@ -14,7 +14,6 @@
 
 {!! view_render_event('bagisto.shop.products.view.gallery.after', ['product' => $product]) !!}
 
-
 @push('scripts')
 
     <script type="text/x-template" id="product-gallery-template">
