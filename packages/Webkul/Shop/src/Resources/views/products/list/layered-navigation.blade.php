@@ -136,7 +136,7 @@
                         0,
                         0
                     ],
-                    max: 500,
+                    max: 15000,
                     processStyle: {
                         "backgroundColor": "#FF6472"
                     },
