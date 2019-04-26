@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <link rel="icon" sizes="16x16" href="{{ asset('vendor/webkul/ui/assets/images/favicon.ico') }}" />
+        <link rel="icon" sizes="16x16" href="{{ asset('images/favicon.png') }}" />
 
         <link rel="stylesheet" href="{{ asset('vendor/webkul/admin/assets/css/admin.css') }}">
         <link rel="stylesheet" href="{{ asset('vendor/webkul/ui/assets/css/ui.css') }}">
@@ -77,7 +77,7 @@
                 <div class="adjacent-center">
 
                     <div class="brand-logo">
-                        <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="Bagisto"/>
+                        <img src="{{ asset('images/logo.png') }}" style="width: 210px;" alt="BDKroy"/>
                     </div>
 
                     {!! view_render_event('bagisto.admin.layout.content.before') !!}
@@ -88,7 +88,7 @@
 
                     <div class="footer">
                         <p>
-                            {{ trans('admin::app.footer.copy-right') }}
+                            © Copyright 2018 BDKroy, All rights reserved.
                         </p>
                     </div>
 
