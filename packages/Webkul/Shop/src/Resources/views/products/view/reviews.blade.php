@@ -78,6 +78,6 @@
             </div>
         </div>
     @endif
-@endif
+
 
 {!! view_render_event('bagisto.shop.products.view.reviews.after', ['product' => $product]) !!}
