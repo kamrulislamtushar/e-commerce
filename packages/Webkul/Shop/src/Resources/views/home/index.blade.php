@@ -1,7 +1,7 @@
 @extends('shop::layouts.master')
 
 @section('page_title')
-    {{ __('shop::app.home.page-title') }}
+    BDKroy | Home
 @endsection
 
 @section('content-wrapper')
