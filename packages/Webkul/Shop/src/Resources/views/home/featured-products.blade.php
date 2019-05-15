@@ -7,7 +7,7 @@
             <span class="featured-seperator" style="color:lightgrey;">_____</span>
         </div>
 
-        <div class="featured-grid product-grid-4">
+        <div class="featured-grid product-grid-4 owl-carousel owl-theme" style="grid-column-gap: 0px !important;">
 
             @foreach ($products as $productFlat)
 
