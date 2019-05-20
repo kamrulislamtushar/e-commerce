@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    <div class="product-image">
+    <div class="product-image" id="product-image">
         <a href="{{ route('shop.products.index', $product->url_key) }}" title="{{ $product->name }}">
             <img src="{{ $productBaseImage['medium_image_url'] }}" />
         </a>
@@ -42,13 +42,13 @@
                     @include('shop::products.wishlist')
                 </div>
             @else
-                <div class="cart-wish-wrap">
+                <div class="cart-wish-wrap middle">
                     <form action="{{route('cart.add', $product->id)}}" method="POST">
                         @csrf
                         <input type="hidden" name="product" value="{{ $product->id }}">
                         <input type="hidden" name="quantity" value="1">
                         <input type="hidden" value="false" name="is_configurable">
-                        <button class="btn btn-lg btn-primary addtocart" {{ $product->haveSufficientQuantity(1) ? '' : 'disabled' }}><i class="fas fa-cart-plus"></i> {{ __('shop::app.products.add-to-cart') }}</button>
+                        <button id="add-cart" class="btn btn-lg btn-primary addtocart" {{ $product->haveSufficientQuantity(1) ? '' : 'disabled' }}><i class="fas fa-cart-plus"></i> {{ __('shop::app.products.add-to-cart') }}</button>
                     </form>
 
                     @include('shop::products.wishlist')
@@ -58,5 +58,45 @@
     </div>
 
 </div>
+@push('css')
+    <style>
+        /*#add-cart {*/
+        /*    opacity: 0;*/
+        /*}*/
+        /*.product-card:hover #add-cart {*/
+        /*    opacity: 1;*/
+        /*}*/
+        .product-card {
+            position: relative;
+        }
+        .product-image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            margin-left: 45px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            /*text-align: center;*/
+        }
 
+        .product-card:hover .product-image {
+            opacity: 0.1;
+        }
+
+        .product-card:hover .middle {
+            opacity: 1;
+        }
+    </style>
+@endpush
 {!! view_render_event('bagisto.shop.products.list.card.after', ['product' => $product]) !!}
