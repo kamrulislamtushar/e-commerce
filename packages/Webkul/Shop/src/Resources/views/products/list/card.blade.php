@@ -34,7 +34,7 @@
             @include ('shop::products.add-to', ['product' => $product])
         @else
             @if ($product->type == "configurable")
-                <div class="cart-wish-wrap">
+                <div class="cart-wish-wrap middle">
                     <a href="{{ route('cart.add.configurable', $product->url_key) }}" class="btn btn-lg btn-primary addtocart">
                         {{ __('shop::app.products.add-to-cart') }}
                     </a>
