@@ -15,6 +15,7 @@
     <div class="product-image" id="product-image">
         <a href="{{ route('shop.products.index', $product->url_key) }}" title="{{ $product->name }}">
             <img src="{{ $productBaseImage['medium_image_url'] }}" />
+            @include('shop::products.wishlist')
         </a>
     </div>
 
@@ -38,8 +39,6 @@
                     <a href="{{ route('cart.add.configurable', $product->url_key) }}" class="btn btn-lg btn-primary addtocart">
                         {{ __('shop::app.products.add-to-cart') }}
                     </a>
-
-                    @include('shop::products.wishlist')
                 </div>
             @else
                 <div class="cart-wish-wrap middle">
@@ -50,8 +49,6 @@
                         <input type="hidden" value="false" name="is_configurable">
                         <button id="add-cart" class="btn btn-lg btn-primary addtocart" {{ $product->haveSufficientQuantity(1) ? '' : 'disabled' }}><i class="fas fa-cart-plus"></i> {{ __('shop::app.products.add-to-cart') }}</button>
                     </form>
-
-                    @include('shop::products.wishlist')
                 </div>
             @endif
         @endif
