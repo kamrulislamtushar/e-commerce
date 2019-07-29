@@ -1,14 +1,6 @@
-<p align="center">
-<a href="http://www.bagisto.com"><img src="https://bagisto.com/wp-content/themes/bagisto/images/logo.png" alt="Total Downloads"></a>
-</p>
 
-<p align="center">
-<a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/license.svg" alt="License"></a>
-<a href="#backers"><img src="https://opencollective.com/bagisto/backers/badge.svg" alt="Backers on Open Collective"></a>
-<a href="#sponsors"><img src="https://opencollective.com/bagisto/sponsors/badge.svg" alt="Sponsors on Open Collective"></a>
-</p>
+
+
 
 # Topics
 1. ### [Introduction](#1-introduction-)
@@ -19,16 +11,6 @@
 
 ### 1. Introduction <a name="#1-introduction-"></a>:
 
-[Bagisto](https://www.bagisto.com) is a hand tailored E-Commerce framework designed on some of the hottest opensource technologies
-such as [Laravel](https://laravel.com) a [PHP](https://secure.php.net/) framework, [Vue.js](https://vuejs.org)
-a progressive Javascript framework.
-
-**Bagisto is viable attempt to cut down your time, cost and workforce for building online stores or migrating from physical stores
-to the ever demanding online world. Your business whether small or huge it suits all and very simple to set it up.**
-
-**We are also having a forum for any type of your concern, feature request discussions. Please visit: [Bagisto Forums](https://forums.bagisto.com/)**
-
-# Visit our live [Demo](https://demo.bagisto.com)
 
 It packs in lots of demanding features that allows your business to scale in no time:
 
@@ -44,7 +26,6 @@ It packs in lots of demanding features that allows your business to scale in no 
 * Orders Management System.
 * Customer Cart, Wishlist, Product Reviews.
 * Simple and Configurable Products.
-* Check out [click here](https://bagisto.com/features/).
 
 **For Developers**:
 Dev guys can take advantage of two of the hottest frameworks used in this project Laravel and Vue.js, both of these frameworks have been used in Bagisto.
@@ -68,9 +49,7 @@ Bagisto is using power of both of these frameworks and making best out of it out
 
 **Now configure your database:**
 
-If the above command was completed successfully, then you'll find directory **bagisto** and all of the code will be inside it.
-
-Find file **.env** inside **bagisto** directory and set the environment variables listed below:
+.env file setup
 
 * **APP_URL**
 * **DB_CONNECTION**
@@ -114,7 +93,7 @@ Although, mailer environment variables are also required to be set up as **Bagis
 ~~~
 
 
-**To execute Bagisto**:
+
 
 ##### On server:
 
