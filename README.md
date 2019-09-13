@@ -59,7 +59,7 @@ Bagisto is using power of both of these frameworks and making best out of it out
 * **DB_USERNAME**
 * **DB_PASSWORD**
 
-Although, mailer environment variables are also required to be set up as **Bagisto** requires emails to send to customers and admins for various functionalities that are built in.
+Although, mailer environment variables are also required to be set up as this system requires emails to send to customers and admins for various functionalities that are built in.
 
 
 
